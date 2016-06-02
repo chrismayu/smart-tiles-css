@@ -1,0 +1,85 @@
+/*
+Base Code
+
+ */ 
+.switch[data-device='e244bfcf-1f17-4e26-ac6b-9f0df5e712ad'] .icon i.active:before {color: white; content: "";font-size:1.3em;line-height:2em;width:100%;margin-top: -1em;} /* Fan item specific:icon and color */ 
+.switch[data-device='e244bfcf-1f17-4e26-ac6b-9f0df5e712ad'] .icon i.inactive:before {content: "";font-size:1.3em;line-height:2em;width:100%;margin-top: -1em;} /* Kids TV item specific icon and color */
+
+.switch[data-device='9fa4e02f-5054-46d5-87c6-3c8a16ab2190'] .icon i.active:before {color: white; content: "";font-size:1.3em;line-height:2em;width:100;} /* Fan item specific:icon and color */ 
+.switch[data-device='9fa4e02f-5054-46d5-87c6-3c8a16ab2190'] .icon i.inactive:before {content: "";font-size:1.3em;line-height:2em;width:100%;} /* Main Floor specific icon and color */
+
+/* Away Routine Button */
+ 
+.tile.momentary[data-device='3b990d86-a683-4053-9cc6-ab2ab258feac'] {background-color: purple} /* This will change the background color for the specific switch tile whose device ID matches the data-device you enter. */
+.tile.momentary[data-device='3b990d86-a683-4053-9cc6-ab2ab258feac'] .icon i.fa:before {content: "";} /* This will change the Active Switch to the Font Awesome icon selected. A color tag can also be added. */
+ 
+/* Good Morning Routine Button */
+.tile.momentary[data-device='cee376b0-891c-41f8-8655-c6aecbe8d003'] {background-color: #c7f37b;}  
+.tile.momentary[data-device='cee376b0-891c-41f8-8655-c6aecbe8d003'] .icon i.fa:before {content: "";}  
+
+/* Bed Routine Button */
+.tile.momentary[data-device='d3eeef94-1b66-4155-a7b3-5ea4d129a301'] {background-color: #673ab7;}  
+.tile.momentary[data-device='d3eeef94-1b66-4155-a7b3-5ea4d129a301'] .icon i.fa:before {content: "";}  
+ 
+/* Siren Silent Button */
+.tile.switch[data-device='494972f9-5c98-4935-bd34-c4a062798ee8'] {background-color: #ff353f;}  
+.tile.switch[data-device='494972f9-5c98-4935-bd34-c4a062798ee8'] .icon i.fa:before {content: "";}  
+ 
+
+/* Im back Routine Button */
+.tile.momentary[data-device='a27f28c7-d75a-437e-b8c9-7d8bb0406dd8'] {background-color: #e5d345;}  
+.tile.momentary[data-device='a27f28c7-d75a-437e-b8c9-7d8bb0406dd8'] .icon i.fa:before {content: "";}  
+ 
+
+.tile.momentary .title { left:0; right:0; text-align: center;}
+.tile.switch .title { left:0; right:0; text-align: center;}
+.tile.motion .title { left:0; right:0; text-align: center;}
+.tile.contact .title { left:0; right:0; text-align: center;}
+.tile.temperature .title { left:0; right:0; text-align: center;}
+
+.mode.Away{background-color: purple} 
+.mode.Night{background-color: #673ab7;}
+.mode.Home{background-color: #e5d345;}
+.tile.dashboard{background-color: #b4c5fe;}
+ 
+ /* WEATHER */
+.weather[data-weather='mostlycloudy'] {background-color: #D3D3D3} /* Changes the tile background color based on mostly-cloudy conditions */
+.weather[data-weather='nt_partlycloudy'] {background-color: #D3D3D3} /* Changes the tile background color based on partly-cloudy conditions */
+.weather[data-weather='cloudy'] {background-color: #D3D3D3} /* Changes the tile background color based on cloudy conditions */
+.weather[data-weather='fog'] {background-color: #D3D3D3} /* Changes the tile background color based on fog conditions */
+.weather[data-weather='rain'] {background-color: #6666CE} /* Changes the tile background color based on rain conditions */
+.weather[data-weather='clear'] {background-color: #FFD700} /* Changes the tile background color based on clear conditions */
+.weather[data-weather='sunny'] {background-color: #FFD700} /* Changes the tile background color based on sunny conditions */
+.weather[data-weather='snow'] {background-color: #FFFFFF} /* Changes the tile background color based on snow conditions */
+
+.mode.Night .icon i.fa:before {content: "";} 
+
+ 
+/* Battery - Changes battery icon to Font Awesome battery icons and changes color and fill amount based on percentage */
+.battery[data-value^='0'] .batt:after {content:""; color: #FA0000}
+.battery[data-value^='0'] .batt svg {display: none;}
+.battery[data-value^='1'] .batt:after {content:""; color: #FB3300}
+.battery[data-value^='1'] .batt svg {display: none;}
+.battery[data-value^='2'] .batt:after {content:""; color: #FC6600}
+.battery[data-value^='2'] .batt svg {display: none;}
+.battery[data-value^='3'] .batt:after {content:""; color: #FD9900}
+.battery[data-value^='3'] .batt svg {display: none;}
+.battery[data-value^='4'] .batt:after {content:""; color: #FECC00}
+.battery[data-value^='4'] .batt svg {display: none;}
+.battery[data-value^='5'] .batt:after {content:""; color: #FFFF00}
+.battery[data-value^='5'] .batt svg {display: none;}
+.battery[data-value^='6'] .batt:after {content:""; color: #CCFF00}
+.battery[data-value^='6'] .batt svg {display: none;}
+.battery[data-value^='7'] .batt:after {content:""; color: #99FF00}
+.battery[data-value^='7'] .batt svg {display: none;}
+.battery[data-value^='8'] .batt:after {content:""; color: #66FF00}
+.battery[data-value^='8'] .batt svg {display: none;}
+.battery[data-value^='9'] .batt:after {content:""; color: #33FF00}
+.battery[data-value^='9'] .batt svg {display: none;}
+.battery[data-value^='10'] .batt:after {content:""; color: #00FF00}
+.battery[data-value^='10'] .batt svg {display: none;}
+
+.tile.battery{background-color: #7f9568;}
+
+
+ 
